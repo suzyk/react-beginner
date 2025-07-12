@@ -25,7 +25,7 @@ export default function Movie({
 }
 
 Movie.protoType = {
-  is: PropTypes.number.isRequired,
+  id: PropTypes.number.isRequired,
   medium_cover_image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,

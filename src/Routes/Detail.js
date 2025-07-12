@@ -7,7 +7,8 @@ export default function Detail() {
   const getMovie = async () => {
     const json = await (
       await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
-    ).json();
+    ) //68909
+      .json();
     const m = json.data.movie;
     setMovie({ title: m.title, genres: m.genres, rating: m.rating });
   };
